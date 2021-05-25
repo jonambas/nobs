@@ -2,9 +2,11 @@
   "name": "nobs",
   "version": "0.0.1",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "modle": "dist/index.esm.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "rollup -c",
+    "watch": "rollup -cw"
   },
   "repository": {
     "type": "git",
@@ -15,5 +17,16 @@
   "bugs": {
     "url": "https://github.com/jonambas/nobs/issues"
   },
-  "homepage": "https://github.com/jonambas/nobs#readme"
+  "homepage": "https://github.com/jonambas/nobs#readme",
+  "devDependencies": {
+    "@rollup/plugin-typescript": "^8.2.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "rollup": "^2.49.0",
+    "rollup-plugin-dts": "^3.0.2",
+    "rollup-plugin-typescript": "^1.0.1",
+    "rollup-plugin-typescript2": "^0.30.0",
+    "tslib": "^2.2.0",
+    "typescript": "^4.2.4"
+  }
 }
